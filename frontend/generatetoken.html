@@ -1,0 +1,21 @@
+
+<!DOCTYPE html><html><head><meta charset='UTF-8'>
+<title>Create Token Website | MintForge</title>
+<link rel='stylesheet' href='styles.css'></head><body>
+<header class='header'><h1 class='logo'>MintForge</h1>
+<a href='index.html' class='btn-primary'>Home</a></header>
+<section class='form-wrapper'><div class='form-card'>
+<h2 class='form-title'>Create Token Website</h2>
+<form id='tokenForm' onsubmit='return false;'>
+<label>Token Name</label><input id='name'>
+<label>Ticker</label><input id='ticker'>
+<label>Description</label><textarea id='desc'></textarea>
+<label>Contract</label><input id='address'>
+<label>Logo Upload</label><input type='file' id='logoFile'>
+<label>Twitter</label><input id='twitter'>
+<label>Telegram</label><input id='telegram'>
+<label>Where to Buy</label><input id='buy'>
+<button type='button' onclick='generateSite()' class='btn-submit'>Generate</button>
+</form>
+<p id='status'></p></div></section>
+<script src='script.js'></script></body></html>
