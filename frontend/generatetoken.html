@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Token Website | MintForge</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">MintForge</h1>
+  <a href="index.html" class="btn-primary">Home</a>
+</header>
+
+<section class="form-wrapper">
+  <div class="form-card">
+    <h2 class="form-title">Create Token Website</h2>
+
+    <form id="tokenForm" onsubmit="return false;">
+
+      <label>Token Name</label>
+      <input id="name" required>
+
+      <label>Ticker</label>
+      <input id="ticker" required>
+
+      <label>Description</label>
+      <textarea id="desc" required></textarea>
+
+      <label>Contract</label>
+      <input id="address">
+
+      <label>Logo Upload</label>
+      <input type="file" id="logoFile" accept="image/*">
+
+      <label>Theme</label>
+      <select id="theme">
+        <option value="pink">Pink</option>
+        <option value="blue">Blue</option>
+        <option value="dark">Dark</option>
+        <option value="solana">Solana</option>
+      </select>
+
+      <label>Twitter</label>
+      <input id="twitter">
+
+      <label>Telegram</label>
+      <input id="telegram">
+
+      <label>Where to Buy</label>
+      <input id="buy">
+
+      <button type="button" onclick="generateSite()" class="btn-submit">Generate</button>
+
+    </form>
+
+    <p id="status" class="status"></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
